@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>arduino_dataview</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>TemServlet</servlet-name>
+    <servlet-class>com.mmciel.servlet.TemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TemServlet</servlet-name>
+    <url-pattern>/tem.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HumServlet</servlet-name>
+    <servlet-class>com.mmciel.servlet.HumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HumServlet</servlet-name>
+    <url-pattern>/hum.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SunServlet</servlet-name>
+    <servlet-class>com.mmciel.servlet.SunServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SunServlet</servlet-name>
+    <url-pattern>/sun.do</url-pattern>
+  </servlet-mapping>
+</web-app>
